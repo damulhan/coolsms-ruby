@@ -39,7 +39,7 @@ module Request
     return JSON.parse(res.body)
   end
 
-  def self.put(path, body, headers)
+  def self.put(path, body, headers = nil)
     auth = get_header
     uri = get_uri(path)
     http = Net::HTTP.new(uri.host, uri.port)
