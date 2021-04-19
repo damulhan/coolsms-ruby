@@ -6,7 +6,7 @@ require 'securerandom'
 
 module Request
 
-  @file = File.read '../config.json'
+  @file = File.read File.join(File.dirname(__FILE__), '../config.json')
   @config = JSON.parse(@file)
 
   def self.get_uri(path)
@@ -39,13 +39,18 @@ module Request
     return JSON.parse(res.body)
   end
 
-  def self.put(path, body)
-    header = get_header
+  def self.put(path, body, headers)
+    auth = get_header
     uri = get_uri(path)
     http = Net::HTTP.new(uri.host, uri.port)
     http.use_ssl = true
     req = Net::HTTP::Put.new(uri.path, 'Content-Type' => 'application/json')
-    req.add_field('Authorization', header)
+    req.add_field('Authorization', auth)
+    if headers
+      headers.each do |k, v|
+        req.add_field(k, v)
+      end
+    end
     if body
       req.body = body.to_json
     end
@@ -53,7 +58,7 @@ module Request
     return JSON.parse(res.body)
   end
 
- 
+
   def self.get(path)
     header = get_header
     uri = get_uri(path)
