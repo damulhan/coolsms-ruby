@@ -1,6 +1,6 @@
 {
-  "api_key": "NCSPX2S1CWNQ3D1R",
-  "api_secret": "IXHBDCUIKZKUEDPL3KQFQNOIJ15ZHKVL",
+  "api_key": "api_key",
+  "api_secret": "api_secret",
   "protocol": "https",
   "domain": "api.coolsms.co.kr",
   "prefix": ""
