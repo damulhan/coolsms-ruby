@@ -14,6 +14,7 @@ config.json 파일을 아래와 같이 설정 후 examples 아래 예제 코드�
 ### 설치 
 
 ```ruby
+# in Gemfile 
 gem 'coolsms', github: 'damulhan/coolsms-ruby'
 ```
 
