@@ -5,6 +5,7 @@ Gem::Specification.new do |s|
   s.email = ['']
   s.date = '2019-03-25'
   s.summary = 'coolsms-ruby'
+  s.homepage = 'https://coolsms.co.kr/'
   s.files = [
     'README.md',
     'lib/coolsms.rb',
@@ -15,5 +16,5 @@ Gem::Specification.new do |s|
     Dir['examples/**/*']
   ].flatten
   s.require_paths = ['lib']
-  s.license = 'MIT'
+  s.license = ''
 end
