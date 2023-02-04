@@ -16,3 +16,8 @@ config.json 파일을 아래와 같이 설정 후 examples 아래 예제 코드�
 ```ruby
 gem 'coolsms', github: 'damulhan/coolsms-ruby'
 ```
+
+### 링크
+
+* Coolsms: https://coolsms.co.kr 
+* Coolsms Ruby Example: https://github.com/coolsms/coolsms-ruby 
