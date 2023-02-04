@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = 'coolsms'
-  s.version = '0.1.0-etna'
+  s.version = '0.1.0-damulhan'
   s.authors = ['coolsms']
   s.email = ['']
   s.date = '2019-03-25'

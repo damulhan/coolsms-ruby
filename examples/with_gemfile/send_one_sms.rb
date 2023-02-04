@@ -1,8 +1,8 @@
-require_relative '../lib/coolsms'
-
+require 'bundler/setup'
+require 'coolsms'
 require 'json'
 
-file = File.join(File.dirname(__FILE__), '../config.json')
+file = File.join(File.dirname(__FILE__), '../../config.json')
 config = JSON.parse(File.read(file))
 request = Coolsms::Request.new(config)
 message = Coolsms::Message.new(request)

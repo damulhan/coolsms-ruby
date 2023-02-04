@@ -1,0 +1,5 @@
+#gem 'coolsms', path: '../..'
+
+# OR 
+
+gem 'coolsms', github: 'damulhan/coolsms-ruby'
